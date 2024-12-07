@@ -1,8 +1,8 @@
-# <img src="https://github.com/pizzaboxer/bloxstrap/raw/main/Images/Bloxstrap.png" width="48"/> Bloxstrap
-[![License](https://img.shields.io/github/license/pizzaboxer/bloxstrap)](https://github.com/pizzaboxer/bloxstrap/blob/main/LICENSE)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/pizzaboxer/bloxstrap/ci.yml?branch=main&label=builds)](https://github.com/pizzaboxer/bloxstrap/actions)
-[![Downloads](https://img.shields.io/github/downloads/pizzaboxer/bloxstrap/latest/total?color=981bfe)](https://github.com/pizzaboxer/bloxstrap/releases)
-[![Version](https://img.shields.io/github/v/release/pizzaboxer/bloxstrap?color=7a39fb)](https://github.com/pizzaboxer/bloxstrap/releases/latest)
+# <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/raw/main/Images/Bloxstrap.png" width="48"/> Bloxstrap
+[![License](https://img.shields.io/github/license/Fireblade-Software/bloxstrap-2.5.3-renewed)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/blob/main/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Fireblade-Software/bloxstrap-2.5.3-renewed/ci.yml?branch=main&label=builds)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/actions)
+[![Downloads](https://img.shields.io/github/downloads/Fireblade-Software/bloxstrap-2.5.3-renewed/latest/total?color=981bfe)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/releases)
+[![Version](https://img.shields.io/github/v/release/Fireblade-Software/bloxstrap-2.5.3-renewed?color=7a39fb)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/releases/latest)
 [![Discord](https://img.shields.io/discord/1099468797410283540?logo=discord&logoColor=white&label=discord&color=4d3dff)](https://discord.gg/nKjV3mGq6R)
 [![lol](https://img.shields.io/badge/mom%20made-pizza%20rolls-orange)](https://media.tenor.com/FIkSGbGycmAAAAAd/manly-roblox.gif)
 
@@ -10,12 +10,12 @@ An open-source, feature-packed alternative bootstrapper for Roblox.
 
 This a drop-in replacement for the stock Roblox bootstrapper, working more or less how you'd expect it to, while providing additional useful features. This does not touch or modify the game client itself, it's just a launcher! So don't worry, there's practically no risk of being banned for using this.
 
-Running into a problem or need help with something? [Check out the Wiki](https://github.com/pizzaboxer/bloxstrap/wiki). If you can't find anything, or would like to suggest something, please [submit an issue](https://github.com/pizzaboxer/bloxstrap/issues) or report it in our [Discord server](https://discord.gg/nKjV3mGq6R).
+Running into a problem or need help with something? [Check out the Wiki](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/wiki). If you can't find anything, or would like to suggest something, please [submit an issue](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/issues) or report it in our [Discord server](https://discord.gg/nKjV3mGq6R).
  
 Bloxstrap is only supported for PCs running Windows.
  
  ## Installing
-Download the [latest release of Bloxstrap](https://github.com/pizzaboxer/bloxstrap/releases/latest), and run it. Configure your preferences if needed, and install. That's about it!
+Download the [latest release of Bloxstrap](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/releases/latest), and run it. Configure your preferences if needed, and install. That's about it!
 
 Alternatively, you can install Bloxstrap via [Winget](https://winstall.app/apps/pizzaboxer.Bloxstrap) by running this in a Command Prompt window:
 ```
@@ -45,11 +45,11 @@ Bloxstrap also only runs whenever necessary, so it doesn't stay running in the b
 ## Screenshots
 
 <p float="left">
-    <img src="https://github.com/pizzaboxer/bloxstrap/assets/41478239/cd723d23-9bff-401e-aadf-deea265a3b1c" width="829" />
-    <img src="https://github.com/pizzaboxer/bloxstrap/assets/41478239/dcfd0cdf-1aae-45bb-849a-f7710ec63b28" width="435" />
-    <img src="https://github.com/pizzaboxer/bloxstrap/assets/41478239/e08cdf28-4f99-46b5-99f2-5c338aac86db" width="390" />
-    <img src="https://github.com/pizzaboxer/bloxstrap/assets/41478239/a45755cb-39da-49df-b0ad-456a139e2efc" Width="593" />
-    <img src="https://github.com/pizzaboxer/bloxstrap/assets/41478239/7ba35223-9115-401f-bbc1-d15e9c5fd79e" width="232" />
+    <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/assets/41478239/cd723d23-9bff-401e-aadf-deea265a3b1c" width="829" />
+    <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/assets/41478239/dcfd0cdf-1aae-45bb-849a-f7710ec63b28" width="435" />
+    <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/assets/41478239/e08cdf28-4f99-46b5-99f2-5c338aac86db" width="390" />
+    <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/assets/41478239/a45755cb-39da-49df-b0ad-456a139e2efc" Width="593" />
+    <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/assets/41478239/7ba35223-9115-401f-bbc1-d15e9c5fd79e" width="232" />
 <p>
 
 ## Special thanks
