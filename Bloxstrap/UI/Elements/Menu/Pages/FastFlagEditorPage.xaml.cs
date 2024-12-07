@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -122,7 +122,7 @@ namespace Bloxstrap.UI.Elements.Menu.Pages
 
                     if (App.FastFlags.GetValue(newName) is not null)
                     {
-                        Controls.ShowMessageBox("A FastFlag with this name already exists.", MessageBoxImage.Information);
+                        Frontend.ShowMessageBox("A FastFlag with this name already exists.", MessageBoxImage.Information);
                         e.Cancel = true;
                         textbox.Text = oldName;
                         return;
@@ -181,7 +181,7 @@ namespace Bloxstrap.UI.Elements.Menu.Pages
             }
             else
             {
-                Controls.ShowMessageBox("An entry for this FastFlag already exists.", MessageBoxImage.Information);
+                Frontend.ShowMessageBox("An entry for this FastFlag already exists.", MessageBoxImage.Information);
 
                 bool refresh = false;
 
@@ -256,7 +256,7 @@ namespace Bloxstrap.UI.Elements.Menu.Pages
                 }
                 catch (Exception ex) 
                 {
-                    Controls.ShowMessageBox(
+                    Frontend.ShowMessageBox(
                         "The JSON you've entered does not appear to be valid. Please double check it and try again.\n" +
                         "\n" +
                         "More information:\n" +
@@ -271,14 +271,17 @@ namespace Bloxstrap.UI.Elements.Menu.Pages
 
             if (conflictingFlags.Any())
             {
-                var result = Controls.ShowMessageBox(
-                    "Some of the flags you are attempting to import already have set values. Would you like to overwrite their current values with the ones defined in the import?\n" +
+                int count = conflictingFlags.Count();
+
+                string message = "Some of the flags you are attempting to import already have set values. Would you like to overwrite their current values with the ones defined in the import?\n" +
                     "\n" +
-                    "Conflicting flags:\n" +
-                    String.Join(", ", conflictingFlags),
-                    MessageBoxImage.Question,
-                    MessageBoxButton.YesNo
-                );
+                    $"There are {count} conflicting flag definitions:\n" + 
+                    String.Join(", ", conflictingFlags.Take(25));
+
+                if (count > 25)
+                    message += "...";
+
+                var result = Frontend.ShowMessageBox(message, MessageBoxImage.Question, MessageBoxButton.YesNo);
 
                 overwriteConflicting = result == MessageBoxResult.Yes;
             }
