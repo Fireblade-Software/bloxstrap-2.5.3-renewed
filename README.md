@@ -1,4 +1,4 @@
-# <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/raw/main/Images/Bloxstrap.png" width="48"/> Bloxstrap
+# <img src="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/raw/main/Images/Bloxstrap.png" width="48"/> Bloxstrap Renewed
 [![License](https://img.shields.io/github/license/Fireblade-Software/bloxstrap-2.5.3-renewed)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Fireblade-Software/bloxstrap-2.5.3-renewed/ci.yml?branch=main&label=builds)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/actions)
 [![Downloads](https://img.shields.io/github/downloads/Fireblade-Software/bloxstrap-2.5.3-renewed/latest/total?color=981bfe)](https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/releases)
