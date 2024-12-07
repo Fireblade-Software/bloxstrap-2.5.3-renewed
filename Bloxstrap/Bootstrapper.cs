@@ -372,7 +372,7 @@ namespace Bloxstrap
 
             if (App.Settings.Prop.EnableActivityTracking)
             {
-                activityWatcher = new();
+                activityWatcher = new(gameClientPid);
                 shouldWait = true;
 
                 App.NotifyIcon?.SetActivityWatcher(activityWatcher);
