@@ -24,7 +24,7 @@ namespace Bloxstrap.UI.Elements.Menu
             DataContext = new MainWindowViewModel(this);
         }
 
-        public void OpenWiki(object? sender, EventArgs e) => Utilities.ShellExecute($"https://github.com/{App.ProjectRepository}/wiki");
+        public void OpenWiki(object? sender, EventArgs e) => Utilities.ShellExecute("https://github.com/pizzaboxer/bloxstrap/wiki");
 
         #region INavigationWindow methods
 
