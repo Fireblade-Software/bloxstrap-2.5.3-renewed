@@ -44,12 +44,15 @@
       <ui:ToggleSwitch IsChecked="{Binding ShowServerDetailsEnabled, Mode=TwoWay}" />
     </ui:CardControl>
 
-    <controls:OptionControl 
-      Header="{x:Static resources:Strings.Menu_Integrations_DesktopApp_Title}" 
-      Description="{x:Static resources:Strings.Menu_Integrations_DesktopApp_Description}"
-      IsEnabled="{Binding InnerContent.IsChecked, ElementName=ActivityTrackingOption, Mode=OneWay}">
+    <ui:CardControl Margin="0,8,0,0">
+      <ui:CardControl.Header>
+        <StackPanel>
+          <TextBlock FontSize="14" Text="Disable desktop app" />
+          <TextBlock Margin="0,2,0,0" FontSize="12" Text="Stops the desktop app from showing, especially when you leave a game." Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+        </StackPanel>
+      </ui:CardControl.Header>
       <ui:ToggleSwitch IsChecked="{Binding DisableAppPatchEnabled, Mode=TwoWay}" />
-    </controls:OptionControl>
+    </ui:CardControl>
 
     <TextBlock Text="Discord Rich Presence" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
     <TextBlock Margin="0,4,0,0" Text="This feature requires activity tracking to be enabled." TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
