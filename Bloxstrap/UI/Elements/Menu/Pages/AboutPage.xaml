@@ -31,12 +31,12 @@
           <TextBlock Grid.Column="1" Text="{Binding Version, Mode=OneTime}" Margin="4,0,0,2" VerticalAlignment="Bottom" FontSize="16" FontWeight="Medium" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
         </Grid>
         <TextBlock Text="An open-source, feature-packed alternative bootstrapper for Roblox" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
-        <TextBlock Text="Developed by pizzaboxer - if you like this, please consider leaving a star on GitHub!" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+        <TextBlock Text="Forked by Fireblade - if you like this, please consider leaving a star on GitHub!" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
       </StackPanel>
     </Grid>
     <StackPanel Orientation="Horizontal">
-      <ui:Anchor Margin="0,16,4,0" Content="GitHub repository" Icon="Code24" NavigateUri="https://github.com/pizzaboxer/bloxstrap" />
-      <ui:Anchor Margin="4,16,4,0" Content="Report an issue" Icon="Chat48" NavigateUri="https://github.com/pizzaboxer/bloxstrap/issues" />
+      <ui:Anchor Margin="0,16,4,0" Content="GitHub repository" Icon="Code24" NavigateUri="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed" />
+      <ui:Anchor Margin="4,16,4,0" Content="Report an issue" Icon="Chat48" NavigateUri="https://github.com/Fireblade-Software/bloxstrap-2.5.3-renewed/issues" />
       <ui:Anchor Margin="4,16,4,0" Content="Help and Information" Icon="BookQuestionMark24" NavigateUri="https://github.com/pizzaboxer/bloxstrap/wiki" />
       <ui:Anchor Margin="4,16,0,0" Content="Discord server" Icon="Chat48" NavigateUri="https://discord.gg/nKjV3mGq6R" />
     </StackPanel>
@@ -104,84 +104,89 @@
       </Grid.ColumnDefinitions>
 
       <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://www.roblox.com/users/2485612194/profile">Multako</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://www.roblox.com/users/70315552/profile">pizzaboxer</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,0,4" VerticalAlignment="Bottom" Text="Designing the Bloxstrap logo" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,0,4" VerticalAlignment="Bottom" Text="Creating the Bloxstrap bootstrapper" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/bluepilledgreat">bluepilledgreat</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://www.roblox.com/users/2485612194/profile">Multako</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping with bootstrapper functionality and UX" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,0,4" VerticalAlignment="Bottom" Text="Designing the Bloxstrap logo" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/1011025m">1011025m</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/bluepilledgreat">bluepilledgreat</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping disable the Roblox desktop app, and adding the fake Byfron bootstrapper style" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping with bootstrapper functionality and UX" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/sitiom">sitiom</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/1011025m">1011025m</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="3" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Setting up GitHub CI workflows and Winget releases" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="3" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping disable the Roblox desktop app, and adding the fake Byfron bootstrapper style" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="4" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/Mantaraix">taskmanager</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/sitiom">sitiom</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="4" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping with designing the new menu look and layout" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="4" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Setting up GitHub CI workflows and Winget releases" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="5" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/Extravi">Extravi</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/Mantaraix">taskmanager</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="5" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Allowing their ReShade presets to be bundled prior to removal, and helping with improving UX" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="5" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping with designing the new menu look and layout" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="6" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/he3als">he3als</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/Extravi">Extravi</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="6" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping add graphics options (rendering modes, exclusive fullscreen, etc)" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="6" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Allowing their ReShade presets to be bundled prior to removal, and helping with improving UX" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="7" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/NikSavchenk0">NikSavchenk0</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/he3als">he3als</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="7" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the mod preset for emoji selection" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="7" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Helping add graphics options (rendering modes, exclusive fullscreen, etc)" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="8" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/EasternBloxxer">EasternBloxxer</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/NikSavchenk0">NikSavchenk0</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="8" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the FastFlag preset for preferred lighting mode" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="8" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the mod preset for emoji selection" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="9" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/carter0nline">carter0nline</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/EasternBloxxer">EasternBloxxer</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="9" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the FastFlag preset for enabling GUI hiding" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="9" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the FastFlag preset for preferred lighting mode" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="10" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/MehKako">MehKako</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/carter0nline">carter0nline</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="10" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the FastFlag preset for enabling old textures" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="10" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the FastFlag preset for enabling GUI hiding" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="11" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/EpixScripts">EpixScripts</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/MehKako">MehKako</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="11" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for in-game data communication with rich presence statuses" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="11" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the FastFlag preset for enabling old textures" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="12" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        knivesofeylis
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/EpixScripts">EpixScripts</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="12" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for bulk font replacement" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="12" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for in-game data communication with rich presence statuses" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="13" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/sha4owz">sha4owz</Hyperlink>
+        knivesofeylis
       </TextBlock>
-      <TextBlock Grid.Row="13" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the mod preset for the old avatar editor background" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="13" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for bulk font replacement" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="14" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
-        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://www.roblox.com/users/388534307/profile">DaMlgNoodle</Hyperlink>
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/sha4owz">sha4owz</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="14" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Providing FastFlags for fixing DPI scaling" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="14" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting/helping with the mod preset for the old avatar editor background" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
 
       <TextBlock Grid.Row="15" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
+        <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://www.roblox.com/users/388534307/profile">DaMlgNoodle</Hyperlink>
+      </TextBlock>
+      <TextBlock Grid.Row="15" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Providing FastFlags for fixing DPI scaling" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+
+      <TextBlock Grid.Row="16" Grid.Column="0" Margin="0,4,16,4" FontSize="14" FontWeight="Medium">
         <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/nakoyasha">nakoyasha</Hyperlink>
       </TextBlock>
-      <TextBlock Grid.Row="15" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for the notification area context menu" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+      <TextBlock Grid.Row="16" Grid.Column="1" Margin="0,4,0,4" VerticalAlignment="Bottom" Text="Suggesting the idea for the notification area context menu" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
     </Grid>
     <ui:Anchor Margin="0,16,0,0" Content="See all code contributors" Icon="People48" NavigateUri="https://github.com/pizzaboxer/bloxstrap/graphs/contributors" />
 
