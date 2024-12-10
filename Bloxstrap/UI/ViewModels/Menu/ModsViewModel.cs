@@ -76,6 +76,12 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.Settings.Prop.UseOldAvatarBackground = value;
         }
 
+        public bool DisableAppPatchEnabled
+        {
+            get => App.Settings.Prop.UseDisableAppPatch;
+            set => App.Settings.Prop.UseDisableAppPatch = value;
+        }
+
         public IReadOnlyDictionary<string, EmojiType> EmojiTypes => EmojiTypeEx.Selections;
 
         public string SelectedEmojiType
