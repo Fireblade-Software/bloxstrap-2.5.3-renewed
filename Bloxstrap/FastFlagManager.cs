@@ -90,9 +90,9 @@ namespace Bloxstrap
             { "New (2022)", "OldTexturePack" }
         };
 
-        public static IReadOnlyDictionary<string, string> TextureQuality => new Dictionary<string, string>
+        public static IReadOnlyDictionary<string, string?> TextureQuality => new Dictionary<string, string>
         {
-            { "Automatic", "None" },
+            { "Automatic", null },
             { "Level 0 (Lowest)", "0" },
             { "Level 1", "1" },
             { "Level 2", "2" },
