@@ -70,6 +70,15 @@ namespace Bloxstrap.UI.ViewModels.Menu
             }
         }
 
+        public string AntiAliasQuality
+        {
+            get => App.FastFlags.GetPresetEnum(RenderingModes, "Rendering.MSAA", "True");
+            set
+            {
+                App.FastFlags.SetPresetEnum("Rendering.MSAA", RenderingModes[value], "True");
+            }
+        }
+
         public bool FixDisplayScaling
         {
             get => App.FastFlags.GetPreset("Rendering.DisableScaling") == "True";
@@ -118,10 +127,45 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.FastFlags.SetPresetEnum("Rendering.Lighting", LightingModes[value], "True");
         }
 
+        public TextureQuality SelectedTextureQuality
+        {
+            get => TextureQualities.Where(x => x.Value == App.FastFlags.GetPreset("Rendering.TextureQuality.Level")).FirstOrDefault().Key;
+            set
+            {
+                if (value == TextureQuality.Default)
+                {
+                    App.FastFlags.SetPreset("Rendering.TextureQuality", null);
+                }
+                else
+                {
+                    App.FastFlags.SetPreset("Rendering.TextureQuality.OverrideEnabled", "True");
+                    App.FastFlags.SetPreset("Rendering.TextureQuality.Level", TextureQualities[value]);
+                }
+            }
+        }
+
         public bool GuiHidingEnabled
         {
             get => App.FastFlags.GetPreset("UI.Hide") == "32380007";
             set => App.FastFlags.SetPreset("UI.Hide", value ? "32380007" : null);
+        }
+
+        public bool PlayerShadowEnabled
+        {
+            get => App.FastFlags.GetPreset("Rendering.ShadowIntensity") == "True";
+            set => App.FastFlags.SetPreset("Rendering.ShadowIntensity", value ? "True" : null);
+        }
+
+        public bool PostFXEnabled
+        {
+            get => App.FastFlags.GetPreset("Rendering.DisablePostFX") == "False";
+            set => App.FastFlags.SetPreset("Rendering.DisablePostFX", value ? "False" : null);
+        }
+
+        public bool DisableTerrainTextures
+        {
+            get => App.FastFlags.GetPreset("Rendering.TerrainTextureQuality") == "0";
+            set => App.FastFlags.SetPreset("Rendering.TerrainTextureQuality", value ? "0" : null);
         }
     }
 }
