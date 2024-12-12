@@ -76,29 +76,6 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.FastFlags.SetPreset("Rendering.DisableScaling", value ? "True" : null);
         }
 
-        public bool AlternateGraphicsSelectorEnabled
-        {
-            get => App.FastFlags.GetPreset("UI.Menu.GraphicsSlider") == "True";
-            set => App.FastFlags.SetPreset("UI.Menu.GraphicsSlider", value ? "True" : null);
-        }
-
-        public IReadOnlyDictionary<string, string> MaterialVersions => FastFlagManager.MaterialVersions;
-
-        public string SelectedMaterialVersion
-        {
-            get
-            {
-                string oldMaterials = App.FastFlags.GetPresetEnum(MaterialVersions, "Rendering.Materials", FastFlagManager.OldTexturesFlagValue);
-
-                if (oldMaterials != "Chosen by game")
-                    return oldMaterials;
-
-                return App.FastFlags.GetPresetEnum(MaterialVersions, "Rendering.Materials", FastFlagManager.NewTexturesFlagValue);
-            }
-
-            set => App.FastFlags.SetPresetEnum("Rendering.Materials", MaterialVersions[value], MaterialVersions[value] == "NewTexturePack" ? FastFlagManager.OldTexturesFlagValue : FastFlagManager.NewTexturesFlagValue);
-        }
-
         public IReadOnlyDictionary<string, Dictionary<string, string?>> IGMenuVersions => FastFlagManager.IGMenuVersions;
 
         public string SelectedIGMenuVersion
