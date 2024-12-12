@@ -98,6 +98,7 @@
         </StackPanel>
       </ui:CardControl.Header>
       <ui:ToggleSwitch IsChecked="{Binding PlayerShadowEnabled, Mode=TwoWay}" />
+    </ui:CardControl>
      <ui:CardControl Margin="0,8,0,0">
       <ui:CardControl.Header>
         <StackPanel>
