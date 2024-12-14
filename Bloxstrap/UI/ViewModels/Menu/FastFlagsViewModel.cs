@@ -81,6 +81,17 @@ namespace Bloxstrap.UI.ViewModels.Menu
             }
         }
 
+        public IReadOnlyDictionary<string, string> TextureQualities => FastFlagManager.TextureQualities;
+
+        public string TextureQuality
+        {
+            get => App.FastFlags.GetPresetEnum(TextureQualities, "Rendering.TextureQuality.OverrideEnabled", "True");
+            set
+            {
+                App.FastFlags.SetPresetEnum("Rendering.TextureQuality.Level", TextureQualities[value], "True");
+            }
+        }
+
         public bool FixDisplayScaling
         {
             get => App.FastFlags.GetPreset("Rendering.DisableScaling") == "True";
