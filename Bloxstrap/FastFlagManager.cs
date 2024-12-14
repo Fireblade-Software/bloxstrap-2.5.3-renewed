@@ -25,7 +25,7 @@ namespace Bloxstrap
             { "Rendering.DisableScaling", "DFFlagDisableDPIScale" },
             { "Rendering.ShadowIntensity", "FIntRenderShadowIntensity" },
             { "Rendering.DisablePostFX", "FFlagDisablePostFx" },
-
+            
             { "Rendering.TextureQuality.OverrideEnabled", "DFFlagTextureQualityOverrideEnabled" },
             { "Rendering.TextureQuality.Level", "DFIntTextureQualityOverride" },
             { "Rendering.TerrainTextureQuality", "FIntTerrainArraySliceSize" },
@@ -57,7 +57,7 @@ namespace Bloxstrap
         };
 
         // only one missing here is Metal because lol
-       public static IReadOnlyDictionary<string, string> RenderingModes => new Dictionary<string, string>
+        public static IReadOnlyDictionary<string, string> RenderingModes => new Dictionary<string, string>
         {
             { "Automatic", "None" },
             { "Vulkan", "Vulkan" },
@@ -76,29 +76,13 @@ namespace Bloxstrap
 
         public static IReadOnlyDictionary<string, string?> MSAAModes => new Dictionary<string, string?>
         {
-            { "Automatic", "None" },
+            { "Automatic", null },
             { "1x MSAA", "1" },
             { "2x MSAA", "2" },
             { "4x MSAA", "4" },
             { "8x MSAA", "8" }
         };
 
-        public static IReadOnlyDictionary<string, string> MaterialVersions => new Dictionary<string, string>
-        {
-            { "Chosen by game", "None" },
-            { "Old (Pre-2022)", "NewTexturePack" },
-            { "New (2022)", "OldTexturePack" }
-        };
-
-        public static IReadOnlyDictionary<string, string?> TextureQualities => new Dictionary<string, string?>
-        {
-            { "Automatic", "None" },
-            { "Level 0 (Lowest)", "0" },
-            { "Level 1", "1" },
-            { "Level 2", "2" },
-            { "Level 3 (Highest)", "3" }
-        };
-        
         // this is one hell of a dictionary definition lmao
         // since these all set the same flags, wouldn't making this use bitwise operators be better?
         public static IReadOnlyDictionary<string, Dictionary<string, string?>> IGMenuVersions => new Dictionary<string, Dictionary<string, string?>>
