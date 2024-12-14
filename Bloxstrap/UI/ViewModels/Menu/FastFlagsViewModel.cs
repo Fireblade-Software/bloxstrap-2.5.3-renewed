@@ -70,7 +70,7 @@ namespace Bloxstrap.UI.ViewModels.Menu
             }
         }
 
-        public IReadOnlyDictionary<string, string> MSAAModes => FastFlagManager.MSAAModes;
+        public IReadOnlyDictionary<string, string?> MSAAModes => FastFlagManager.MSAAModes;
 
         public string AntiAliasQuality
         {
@@ -81,7 +81,7 @@ namespace Bloxstrap.UI.ViewModels.Menu
             }
         }
 
-        public IReadOnlyDictionary<string, string> TextureQualities => FastFlagManager.TextureQualities;
+        public IReadOnlyDictionary<string, string?> TextureQualities => FastFlagManager.TextureQualities;
 
         public string TextureQuality
         {
