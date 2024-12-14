@@ -25,7 +25,9 @@ namespace Bloxstrap
             { "Rendering.DisableScaling", "DFFlagDisableDPIScale" },
             { "Rendering.ShadowIntensity", "FIntRenderShadowIntensity" },
             { "Rendering.DisablePostFX", "FFlagDisablePostFx" },
-            
+
+            { "Rendering.TextureQuality.OverrideEnabled", "DFFlagTextureQualityOverrideEnabled" },
+            { "Rendering.TextureQuality.Level", "DFIntTextureQualityOverride" },
             { "Rendering.TerrainTextureQuality", "FIntTerrainArraySliceSize" },
             
             { "Rendering.MSAA", "FIntDebugForceMSAASamples" },
@@ -86,6 +88,15 @@ namespace Bloxstrap
             { "Chosen by game", "None" },
             { "Old (Pre-2022)", "NewTexturePack" },
             { "New (2022)", "OldTexturePack" }
+        };
+
+        public static IReadOnlyDictionary<string, string?> TextureQualities => new Dictionary<string, string>
+        {
+            { "Automatic", null },
+            { "Level 0 (Lowest)", "0" },
+            { "Level 1", "1" },
+            { "Level 2", "2" },
+            { "Level 3 (Highest)", "3" }
         };
         
         // this is one hell of a dictionary definition lmao
