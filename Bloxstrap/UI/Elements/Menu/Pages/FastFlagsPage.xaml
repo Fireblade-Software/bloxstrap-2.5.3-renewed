@@ -83,7 +83,7 @@
           </Grid> 
         </StackPanel>
       </ui:CardControl.Header>
-      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding MSAAModes.Keys, Mode=OneTime}" Text="{Binding MSAAModes, Mode=TwoWay}" />
+      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding MSAAModes.Keys, Mode=OneTime}" Text="{Binding MSAAModes, Mode=OneWay}" />
     </ui:CardControl>
     <ui:CardControl Margin="0,8,0,0">
       <ui:CardControl.Header>
