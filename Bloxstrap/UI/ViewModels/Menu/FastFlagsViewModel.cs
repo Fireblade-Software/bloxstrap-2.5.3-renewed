@@ -70,6 +70,8 @@ namespace Bloxstrap.UI.ViewModels.Menu
             }
         }
 
+        public IReadOnlyDictionary<string, string> MSAAModes => FastFlagManager.MSAAModes;
+
         public string AntiAliasQuality
         {
             get => App.FastFlags.GetPresetEnum(MSAAModes, "Rendering.MSAA", "True");
