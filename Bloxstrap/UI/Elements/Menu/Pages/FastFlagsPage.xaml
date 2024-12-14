@@ -184,5 +184,19 @@
       </ui:CardControl.Header>
       <ui:ToggleSwitch IsChecked="{Binding GuiHidingEnabled, Mode=TwoWay}" />
     </ui:CardControl>
+    <ui:CardControl Margin="0,8,0,0">
+      <ui:CardControl.Header>
+        <StackPanel>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" FontSize="14" Text="Texture quality" />
+          </Grid>
+        </StackPanel>
+      </ui:CardControl.Header>
+      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding TextureQuality.Keys, Mode=OneTime}" Text="{Binding SelectedTextureQuality, Mode=TwoWay}" />
+    </ui:CardControl>
   </StackPanel>
 </ui:UiPage>
