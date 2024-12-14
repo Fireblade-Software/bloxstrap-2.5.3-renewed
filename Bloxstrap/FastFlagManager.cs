@@ -26,8 +26,6 @@ namespace Bloxstrap
             { "Rendering.ShadowIntensity", "FIntRenderShadowIntensity" },
             { "Rendering.DisablePostFX", "FFlagDisablePostFx" },
             
-            { "Rendering.TextureQuality.OverrideEnabled", "DFFlagTextureQualityOverrideEnabled" },
-            { "Rendering.TextureQuality.Level", "DFIntTextureQualityOverride" },
             { "Rendering.TerrainTextureQuality", "FIntTerrainArraySliceSize" },
             
             { "Rendering.MSAA", "FIntDebugForceMSAASamples" },
