@@ -76,7 +76,7 @@ namespace Bloxstrap
 
         public static IReadOnlyDictionary<string, string> MSAAModes => new Dictionary<string, string?>
         {
-            { "Automatic", "None },
+            { "Automatic", "None" },
             { "1x MSAA", "1" },
             { "2x MSAA", "2" },
             { "4x MSAA", "4" },
