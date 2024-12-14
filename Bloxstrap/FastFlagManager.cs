@@ -74,7 +74,7 @@ namespace Bloxstrap
             { "Future (Phase 3)", "Future" }
         };
 
-        public static IReadOnlyDictionary<string, string> MSAAModes => new Dictionary<string, string?>
+        public static IReadOnlyDictionary<string, string?> MSAAModes => new Dictionary<string, string?>
         {
             { "Automatic", "None" },
             { "1x MSAA", "1" },
@@ -90,7 +90,7 @@ namespace Bloxstrap
             { "New (2022)", "OldTexturePack" }
         };
 
-        public static IReadOnlyDictionary<string, string> TextureQualities => new Dictionary<string, string?>
+        public static IReadOnlyDictionary<string, string?> TextureQualities => new Dictionary<string, string?>
         {
             { "Automatic", "None" },
             { "Level 0 (Lowest)", "0" },
