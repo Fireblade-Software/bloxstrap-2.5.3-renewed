@@ -132,7 +132,14 @@ namespace Bloxstrap.UI.ViewModels.Menu
             get => App.FastFlags.GetPresetEnum(TextureQualityModes, "Rendering.TextureQuality.OverrideEnabled", "True");
             set
             {
-                App.FastFlags.SetPresetEnum("Rendering.TextureQuality.Level", TextureQualityModes[value], "True");
+                if (TextureQualityModes.ContainsKey(value))
+                {
+                    App.FastFlags.SetPresetEnum("Rendering.TextureQuality.Level", TextureQualityModes[value], "True");
+                }
+                else
+                {
+                    Console.WriteLine($"Invalid texture quality level: {value}");
+                }
             }
         }
 
