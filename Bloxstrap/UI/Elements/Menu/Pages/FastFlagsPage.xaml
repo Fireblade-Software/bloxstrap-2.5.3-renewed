@@ -196,7 +196,7 @@
           </Grid>
         </StackPanel>
       </ui:CardControl.Header>
-      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding TextureQuality.Keys, Mode=OneTime}" Text="{Binding SelectedTextureQuality, Mode=TwoWay}" />
+      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding TextureQualities.Keys, Mode=OneTime}" Text="{Binding SelectedTextureQuality, Mode=OneWay}" />
     </ui:CardControl>
   </StackPanel>
 </ui:UiPage>
