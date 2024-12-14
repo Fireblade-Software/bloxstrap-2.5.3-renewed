@@ -89,15 +89,7 @@ namespace Bloxstrap
             { "Old (Pre-2022)", "NewTexturePack" },
             { "New (2022)", "OldTexturePack" }
         };
-
-        public static IReadOnlyDictionary<string, string?> TextureQualityModes => new Dictionary<string, string>
-        {
-            { "Automatic", null },
-            { "Level 0 (Lowest)", "0" },
-            { "Level 1", "1" },
-            { "Level 2", "2" },
-            { "Level 3 (Highest)", "3" }
-        };
+        
         // this is one hell of a dictionary definition lmao
         // since these all set the same flags, wouldn't making this use bitwise operators be better?
         public static IReadOnlyDictionary<string, Dictionary<string, string?>> IGMenuVersions => new Dictionary<string, Dictionary<string, string?>>
