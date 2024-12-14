@@ -90,13 +90,13 @@ namespace Bloxstrap
             { "New (2022)", "OldTexturePack" }
         };
 
-        public static IReadOnlyDictionary<string, string?> TextureQuality => new Dictionary<string, string>
+        public static IReadOnlyDictionary<TextureQuality, string?> TextureQualityLevels => new Dictionary<TextureQuality, string?>
         {
-            { "Automatic", null },
-            { "Level 0 (Lowest)", "0" },
-            { "Level 1", "1" },
-            { "Level 2", "2" },
-            { "Level 3 (Highest)", "3" }
+            { TextureQuality.Default, null },
+            { TextureQuality.Level0, "0" },
+            { TextureQuality.Level1, "1" },
+            { TextureQuality.Level2, "2" },
+            { TextureQuality.Level3, "3" },
         };
 
         // this is one hell of a dictionary definition lmao
