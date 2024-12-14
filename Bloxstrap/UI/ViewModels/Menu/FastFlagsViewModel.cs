@@ -127,22 +127,6 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.FastFlags.SetPresetEnum("Rendering.Lighting", LightingModes[value], "True");
         }
 
-        public string TextureQuality
-        {
-            get => App.FastFlags.GetPresetEnum(TextureQualityModes, "Rendering.TextureQuality.OverrideEnabled", "True");
-            set
-            {
-                if (TextureQualityModes.ContainsKey(value))
-                {
-                    App.FastFlags.SetPresetEnum("Rendering.TextureQuality.Level", TextureQualityModes[value], "True");
-                }
-                else
-                {
-                    Console.WriteLine($"Invalid texture quality level: {value}");
-                }
-            }
-        }
-
         public bool GuiHidingEnabled
         {
             get => App.FastFlags.GetPreset("UI.Hide") == "32380007";
