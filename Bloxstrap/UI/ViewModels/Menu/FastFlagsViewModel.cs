@@ -127,21 +127,25 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.FastFlags.SetPresetEnum("Rendering.Lighting", LightingModes[value], "True");
         }
 
-        public IReadOnlyDictionary<TextureQuality, string?> TextureQualities => FastFlagManager.TextureQualityLevels;
-
-        public TextureQuality SelectedTextureQuality
+        public string SelectedTextureQuality
         {
-            get => TextureQualities.Where(x => x.Value == App.FastFlags.GetPreset("Rendering.TextureQuality.Level")).FirstOrDefault().Key;
+            get => TextureQuality
+                .FirstOrDefault(x => x.Value == App.FastFlags.GetPreset("Rendering.TextureQuality.Level"))
+                .Key ?? "Automatic"; // Default to "Automatic" if no match is found
             set
             {
-                if (value == TextureQuality.Default)
+                if (value == "Automatic")
                 {
                     App.FastFlags.SetPreset("Rendering.TextureQuality", null);
                 }
-                else
+                else if (TextureQuality.ContainsKey(value))
                 {
                     App.FastFlags.SetPreset("Rendering.TextureQuality.OverrideEnabled", "True");
-                    App.FastFlags.SetPreset("Rendering.TextureQuality.Level", TextureQualities[value]);
+                    App.FastFlags.SetPreset("Rendering.TextureQuality.Level", TextureQuality[value]);
+                }
+                else
+                {
+                    throw new ArgumentException($"Invalid texture quality: {value}", nameof(value));
                 }
             }
         }
