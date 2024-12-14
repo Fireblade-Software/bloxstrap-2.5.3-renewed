@@ -71,48 +71,6 @@
       <Hyperlink Foreground="{DynamicResource TextFillColorPrimaryBrush}" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags#exclusive-fullscreen">exclusive fullscreen</Hyperlink>
       using Alt+Enter is already enabled by default.
     </TextBlock>
-      <ui:CardControl Margin="0,8,0,0">
-      <ui:CardControl.Header>
-        <StackPanel>
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" FontSize="14" Text="Anti-aliasing quality (MSAA)" />
-          </Grid> 
-        </StackPanel>
-      </ui:CardControl.Header>
-      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding MSAAModes.Keys, Mode=OneTime}" Text="{Binding MSAAModes, Mode=OneWay}" />
-    </ui:CardControl>
-    <ui:CardControl Margin="0,8,0,0">
-      <ui:CardControl.Header>
-        <StackPanel>
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" FontSize="14" Text="Disable player shadows" />
-          </Grid>
-        </StackPanel>
-      </ui:CardControl.Header>
-      <ui:ToggleSwitch IsChecked="{Binding PlayerShadowEnabled, Mode=TwoWay}" />
-    </ui:CardControl>
-     <ui:CardControl Margin="0,8,0,0">
-      <ui:CardControl.Header>
-        <StackPanel>
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" FontSize="14" Text="Disable post-processing effects" />
-          </Grid>
-        </StackPanel>
-      </ui:CardControl.Header>
-      <ui:ToggleSwitch IsChecked="{Binding PostFXEnabled, Mode=TwoWay}" />
-    </ui:CardControl>
     <ui:CardControl Margin="0,8,0,0">
       <ui:CardControl.Header>
         <StackPanel>
@@ -183,20 +141,6 @@
         </StackPanel>
       </ui:CardControl.Header>
       <ui:ToggleSwitch IsChecked="{Binding GuiHidingEnabled, Mode=TwoWay}" />
-    </ui:CardControl>
-    <ui:CardControl Margin="0,8,0,0">
-      <ui:CardControl.Header>
-        <StackPanel>
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" FontSize="14" Text="Texture quality" />
-          </Grid>
-        </StackPanel>
-      </ui:CardControl.Header>
-      <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding TextureQualities.Keys, Mode=OneTime}" Text="{Binding SelectedTextureQuality, Mode=OneWay}" />
     </ui:CardControl>
   </StackPanel>
 </ui:UiPage>
