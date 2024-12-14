@@ -57,7 +57,7 @@ namespace Bloxstrap
         };
 
         // only one missing here is Metal because lol
-        public static IReadOnlyDictionary<string, string> RenderingModes => new Dictionary<string, string>
+        public IReadOnlyDictionary<string, string?> RenderingModes => FastFlagManager.RenderingModes;
         {
             { "Automatic", "None" },
             { "Vulkan", "Vulkan" },
@@ -74,7 +74,7 @@ namespace Bloxstrap
             { "Future (Phase 3)", "Future" }
         };
 
-        public static IReadOnlyDictionary<string, string?> MSAAModes => new Dictionary<string, string?>
+        public IReadOnlyDictionary<string, string?> MSAAModes => FastFlagManager.MSAAModes;
         {
             { "Automatic", null },
             { "1x MSAA", "1" },
@@ -90,7 +90,7 @@ namespace Bloxstrap
             { "New (2022)", "OldTexturePack" }
         };
 
-        public static IReadOnlyDictionary<string, string?> TextureQualities => new Dictionary<string, string>
+        public IReadOnlyDictionary<string, string?> TextureQualities => FastFlagManager.TextureQualities;
         {
             { "Automatic", null },
             { "Level 0 (Lowest)", "0" },
