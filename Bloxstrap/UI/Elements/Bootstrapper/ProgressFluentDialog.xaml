@@ -5,7 +5,6 @@
     xmlns:base="clr-namespace:Bloxstrap.UI.Elements.Base"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:resources="clr-namespace:Bloxstrap.Resources"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:vms="clr-namespace:Bloxstrap.UI.ViewModels.Bootstrapper"
     Width="520"
@@ -72,7 +71,7 @@
                 Padding="4"
                 HorizontalAlignment="Center"
                 Command="{Binding CancelInstallCommand}"
-                Content="{x:Static resources:Strings.Common_Cancel}"
+                Content="Cancel"
                 FontSize="14"
                 IsEnabled="{Binding CancelEnabled, Mode=OneWay}" />
         </Grid>
