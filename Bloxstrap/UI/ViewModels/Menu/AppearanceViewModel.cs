@@ -71,7 +71,6 @@ namespace Bloxstrap.UI.ViewModels.Menu
         {
             { "Bloxstrap", BootstrapperStyle.FluentDialog },
             { "Bloxstrap (Glass)", BootstrapperStyle.FluentAeroDialog },
-            { "Fluent (Classic)", BootstrapperStyle.ClassicFluentDialog },
             { "Progress (~2014)", BootstrapperStyle.ProgressDialog },
             { "Legacy (2011 - 2014)", BootstrapperStyle.LegacyDialog2011 },
             { "Legacy (2008 - 2011)", BootstrapperStyle.LegacyDialog2008 },
