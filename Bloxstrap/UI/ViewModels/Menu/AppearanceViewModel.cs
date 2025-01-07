@@ -69,8 +69,9 @@ namespace Bloxstrap.UI.ViewModels.Menu
 
         public IReadOnlyDictionary<string, BootstrapperStyle> Dialogs { get; set; } = new Dictionary<string, BootstrapperStyle>()
         {
-            { "Bloxstrap", BootstrapperStyle.FluentDialog },
-            { "Bloxstrap (Glass)", BootstrapperStyle.ProgressFluentDialog  },
+            { "Bloxstrap", BootstrapperStyle.ProgressFluentDialog },
+            { "Bloxstrap (Classic)", BootstrapperStyle.FluentDialog },
+            { "Bloxstrap (Glass)", BootstrapperStyle.ProgressFluentAeroDialog  },
             { "Progress (~2014)", BootstrapperStyle.ProgressDialog },
             { "Legacy (2011 - 2014)", BootstrapperStyle.LegacyDialog2011 },
             { "Legacy (2008 - 2011)", BootstrapperStyle.LegacyDialog2008 },
