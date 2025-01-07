@@ -1,4 +1,4 @@
-﻿namespace Bloxstrap.Enums
+namespace Bloxstrap.Enums
 {
     public enum BootstrapperStyle
     {
@@ -7,6 +7,7 @@
         LegacyDialog2011,
         ProgressDialog,
         FluentDialog,
-        ByfronDialog
+        ByfronDialog,
+        ProgressFluentDialog,
     }
 }
