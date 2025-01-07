@@ -9,5 +9,6 @@ namespace Bloxstrap.Enums
         FluentDialog,
         ByfronDialog,
         ProgressFluentDialog,
+        ProgressFluentAeroDialog
     }
 }
