@@ -111,20 +111,17 @@
         {
             // wouldnt it be better to check old version guids?
             // what about fresh installs?
-            get => String.IsNullOrEmpty(App.State.Prop.PlayerVersionGuid) && String.IsNullOrEmpty(App.State.Prop.StudioVersionGuid);
+            get => String.IsNullOrEmpty(App.State.Prop.PlayerVersionGuid);
             set
             {
                 if (value)
                 {
-                    _oldPlayerVersionGuid = App.State.Prop.PlayerVersionGuid;
-                    _oldStudioVersionGuid = App.State.Prop.StudioVersionGuid;
+                    _oldVersionGuid = App.State.Prop.PlayerVersionGuid;
                     App.State.Prop.PlayerVersionGuid = "";
-                    App.State.Prop.StudioVersionGuid = "";
                 }
                 else
                 {
-                    App.State.Prop.PlayerVersionGuid = _oldPlayerVersionGuid;
-                    App.State.Prop.StudioVersionGuid = _oldStudioVersionGuid;
+                    App.State.Prop.PlayerVersionGuid = _oldVersionGuid;
                 }
             }
         }
